@@ -9,6 +9,8 @@
     --green: #339900;
     --shoping-card: #009999;
     --card-text:#797979;
+    --gray:gray;
+
 }
 
 
@@ -39,7 +41,76 @@ html{
     border: 1px solid var(--border-card);
     display: flex;
     flex-wrap: wrap;
+
 }
+.card:hover{
+    border: 1px solid var(--price);
+}
+
+.card__navod{
+    position:absolute;
+    right:0px;
+    top:0px;
+    border:1px solid var(--price);
+    background-color: var(--price);
+    padding: 4px;
+    font-size: 0px;
+    margin-right: 4px;
+    display:flex;
+
+}
+.card:hover .card__navod{
+    font-size: 10px;
+    padding-left: 120px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: var(--border-card);
+    max-height: 30px;
+}
+.card__kestazeni{
+    position: absolute;
+    right:0px;
+    top:40px;
+    border:1px solid var(--gray);
+    background-color: var(--gray);
+    padding: 4px;
+    font-size: 0px;
+    margin-right: 4px;
+    display:flex;
+}
+.card:hover .card__kestazeni{
+    font-size: 10px;
+    padding-left: 120px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: var(--border-card);
+}
+.card__Video{
+    position: absolute;
+    right:0px;
+    top:80px;
+    border:1px solid var(--green);
+    background-color: var(--green);
+    padding: 4px;
+    font-size: 0px;
+    margin-right: 4px;
+display:flex;
+}
+.card:hover .card__Video{
+    font-size: 10px;
+    padding-left: 120px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: var(--backround-card);
+}
+.card__content--icon{
+    
+}
+
+
 
 .card__head > h2{
     text-align: left;
@@ -60,6 +131,7 @@ html{
 .card__content{
     padding-left: 1em;
     padding-right: 1em;
+    position:relative;
 }
 
 .card__content__img{
@@ -79,8 +151,6 @@ html{
     padding-right: 1em;
     display: flex;  
     flex-wrap: nowrap;
-
-
 }
 
 .card__footer_price{
@@ -93,7 +163,7 @@ html{
 
 .icons-bordred{
     position: absolute;
-    right: -9em;
+    right: -10em;
     bottom: 2em;
     border: 8px solid var(--shoping-card);
     background-color: var(--shoping-card);
@@ -101,6 +171,13 @@ html{
     padding-left: 1em;
     padding-right: 1em;
 }
+.icons-bordred:hover {
+    background-color: var(--price);
+    border-radius: 0.5em;
+    border: 8px solid var(--price);
+
+}
+
 
 .card__footer__button{
   font-variation-settings:
