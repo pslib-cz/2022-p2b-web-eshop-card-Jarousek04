@@ -94,7 +94,7 @@ html{
 .card:hover .card__badge{
     font-size: 10px;
     margin-left: 120px;
-    padding-right: 0px;
+    padding-right: 2em;
     padding-top: 0px;
     padding-bottom: 0px;
     width: 70%;
@@ -115,8 +115,8 @@ html{
 }
 
 
-.card__content--icon{
-
+.card__content-icon{
+    order: -1;
 }
 
 
